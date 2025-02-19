@@ -7,7 +7,6 @@ public class RequestForDelivery {
     private CargoDimensions dimensions;
     private boolean isFragile;
     private Workload workload;
-    public static String messageForDistance = "Значение должно быть больше 0";
 
     public RequestForDelivery(int distance, CargoDimensions dimensions, boolean isFragile, Workload workload) {
         setDistance(distance);
@@ -17,7 +16,6 @@ public class RequestForDelivery {
     }
 
     public void setDistance(int distance) {
-        //if (distance <= 0) throw new IllegalArgumentException(messageForDistance);
         this.distance = distance;
     }
 

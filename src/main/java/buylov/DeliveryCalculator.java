@@ -1,7 +1,5 @@
 package buylov;
 
-import static buylov.RequestForDelivery.messageForDistance;
-
 public class DeliveryCalculator {
     private static final double MIN_DELIVERY_COST = 400;
     private static final int DIMENSIONS_BIG = 200;
@@ -11,6 +9,7 @@ public class DeliveryCalculator {
     private static final int FRAGILITY_NORM = 0;
     private static final int[] DISTANCE_EXTRA_ARR = {50, 100, 200, 300};
     private static final int[] DISTANCE_BORDERS_ARR = {0, 2, 10, 30};
+    public static String messageForDistance = "Значение должно быть больше 0";
     public static String messageNotDelivery = "Доставка хрупкого груза на расстояние более 30км не осуществляется";
 
     public static double calculatorCost(RequestForDelivery value) {
