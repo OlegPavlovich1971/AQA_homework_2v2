@@ -71,7 +71,7 @@ public class DeliveryCalculatorTests {
                 () -> {
                     DeliveryCalculator.calculatorCost(argument);
                 });
-        assertEquals(RequestForDelivery.messageForDistance, exception.getMessage(), message);
+        assertEquals(DeliveryCalculator.messageForDistance, exception.getMessage(), message);
     }
 
     Stream<RequestForDelivery> argsCalculatorCostNegativeTest1() {
